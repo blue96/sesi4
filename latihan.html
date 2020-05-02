@@ -11,14 +11,14 @@
         var penumpang = 5;
         var pengurang = 0;
 
-        if (penumpang == 1 || penumpang == 3){
-            pengurang = penumpang * 2;
+        if (penumpang == 4){
+            pengurang = 7;
         }
-        else if (penumpang == 2){
+        else if (penumpang > 2){
             pengurang = 5;
         }
-        else if(penumpang == 4){
-            pengurang = 7;
+        else{
+            pengurang = 2;
         }
         kecepatan = kecepatan - pengurang;
         console.log(kecepatan);

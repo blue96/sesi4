@@ -2,12 +2,12 @@ STORE "kecepatan" to 20
 STORE "penumpang" to any number
 STORE "pengurang" to 0
 
-IF "penumpang" = 1 OR "penumpang" = 3
-    DO "pengurang" = "penumpang" * 2
-ELSE IF "penumpang" = 2
-    DO "pengurang" = 5
-ELSE IF "penumpang" = 4
+IF "penumpang" = 4
     DO "pengurang" = 7
+ELSE IF "penumpang" > 2
+    DO "pengurang" = 5
+ELSE
+    DO "pengurang" = 2
 
 "kecepatan" = "kecepatan" - "pengurang"
 DISPLAY "kecepatan"
