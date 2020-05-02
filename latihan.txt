@@ -1,0 +1,18 @@
+STORE "kecepatan" to 20
+STORE "penumpang" to any number
+STORE "pengurang" to 0
+
+ELSE IF "penumpang" = 0
+    DO "pengurang" = 0
+ELSE IF "penumpang" = 1
+    DO "pengurang" = 2
+ELSE IF "penumpang" = 2
+    DO "pengurang" = 5
+ELSE IF "penumpang" = 3
+    DO "pengurang" = 6
+ELSE IF "penumpang" = 4
+    DO "pengurang" = 7
+
+CALCULATE "kecepatan" minus "pengurang"
+STORE "kecepatan" value with calculation result
+DISPLAY "kecepatan"
